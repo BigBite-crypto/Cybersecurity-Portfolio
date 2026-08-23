@@ -57,7 +57,7 @@ Scope / Impact
 - Searched firewall logs for the exact malicious URL from the Amazon phishing email (bit.ly/3sHkX3da12340) → found a blocked outbound connection attempt from 10.20.2.17 (h.harris's workstation) at 04:58:29 → confirms h.harris's machine attempted to reach the malicious link, but the firewall blocked it before any payload/data transfer occurred.
 <img width="756" height="328" alt="image" src="https://github.com/user-attachments/assets/d605573e-c88e-4b7c-902a-860f724882dd" />
 
-Scope / Impact**
+**Scope / Impact**
 
 This phishing campaign was confirmed against one primary target (j.garcia); no evidence was found that the malicious link was accessed or that credentials/data were submitted. During investigation, a second and separate issue was identified in h.harris's account (HR department), including a blocked attempt to reach an unrelated phishing link and unresolved suspicious external correspondence. No evidence was found of lateral spread to additional employees or systems based on available logs, though the authentication log gap means account compromise for h.harris cannot be fully ruled out. Overall impact is currently assessed as low (no confirmed data loss or system compromise), but Harris's account represents an unresolved risk pending further investigation.
 
@@ -71,7 +71,7 @@ Garcia was likely targeted under the assumption that she is a new employee, sinc
 
 Harris works in Human Resources, which explains why her internal claim vouching for hrconnex.thm as a legitimate vendor was believable — HR staff routinely handle vendor and onboarding coordination. This role likely also gives her access to employee records, meaning if her account is compromised, it raises the risk of exposing sensitive staff data. It's also plausible that Harris's access to hiring information is how the attacker (or compromised account) knew Garcia was a new hire, which would connect the two incidents rather than leaving them as coincidental.
 
-Recommended Actions
+**Recommended Actions**
 
 - Reset password, run an EDR/endpoint scan on 10.20.2.17, and review login history if auth logs become available. Do not presume guilt — frame as investigation, not surveillance.
 - Recommend adding an authentication/identity log source, since this investigation could not confirm or rule out account compromise without one.
