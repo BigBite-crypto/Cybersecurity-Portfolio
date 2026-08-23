@@ -1,3 +1,11 @@
+Case Report: Phishing Campaign — hrconnex.thm & Amazon Impersonation
+
+**Alerts Covered in This Report:**
+
+8814, 8818, 8815, 8816
+- 8814 & 8818: Duplicate detections of the same phishing campaign (hrconnex.thm → j.garcia)
+- 8815 & 8816: Related detections of the same incident (amazon.biz phishing email → blocked click attempt by h.harris)
+
 **SUMMARY / VERDICT**
 
 This alert targeted phishing attempt on a new employee (j.garcia), using a personalized link and an urgent langauge to impersonating HR onboarding. No evidence the link was accessed.
